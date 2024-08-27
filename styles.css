@@ -145,7 +145,7 @@ body {
 }
 
 .service-tier ul, .service-type p, .service-type ul, .service-type li {
-    margin: 0;
+    margin: 10px 0;
     padding-left: 20px;
     list-style-type: none;
     
