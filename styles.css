@@ -64,6 +64,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #302e30;
+    
 }
 
 /* Services container holding both tabs and content */
