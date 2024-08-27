@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<header>
+    <div class="header-container">Compass VA & Design</div>
+    <div class="horizontal-menu">
+        <a href="#">Home</a>
+        <a href="#">Choosing CVAD</a>
+        <a href="#">Treasure Chest</a>
+        <a href="#">Portfolio</a>
+        <a href="#" class="active">Services</a>
+        <a href="#">Contact Us</a>
+    </div>
+</header>
+<body>
+        <main>
+            <div id="main-content">
+                <div class="services-container">
+                    <div class="tabs-container">
+                        <div class="tab" onclick="showContent('va-services')">
+                            <button class="tab-button">Virtual Assistant Services</button>
+                        </div>
+                        <div class="tab" onclick="showContent('design-services')">
+                            <button class="tab-button">Web Design Services</button>
+                        </div>
+                        <!-- Add more tabs as needed -->
+                    </div>
+        
+                    <aside class="service-container">
+                        <p>I offer a blend of services for moms choosing themselves so that they can remain the lifeline to their family, business, and their lives.</p>
+        
+                        <section id="va-services" class="tab-content">
+                            <h3>Virtual Assistant Services</h3>
+                            
+                            <!-- Service Tier 1 -->
+                            <div class="service-tier">
+                                <h4>Essential</h4>
+                                <ul>
+                                    <li><b>Up to 20 hours/month</b></li>
+                                    <li><b>$600/month</b></li>
+                                    <li><b>Basic Email Management</b>: Monitor and respond to client emails within a 48-hour window.</li>
+                                    <li><b>Content Scheduling</b>: Schedule pre-created content for 1 social media platform and blog/newsletter.
+        </li>
+                                    <li><b>Basic Project Coordination</b>: Manage up to 2 small projects simultaneously, including task assignment and progress tracking.</li>
+                                    <li><b>CRM Data Entry</b>: Update client information and interactions in the CRM system.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Service Tier 2 -->
+                            <div class="service-tier">
+                                <h4>Premium</h4>
+                                <ul>
+                                    <li><b>Up to 40 hours/month</li>
+                                    <li>$1,200/month</b></li>
+                                    <li><b>Proactive Client Communication</b>: Manage all client communications with a response time of 24 hours, including handling inquiries and resolving issues.</li>
+                                    <li><b>Content Creation & Scheduling</b>: Oversee up to 3 projects simultaneously, managing timelines, resources, and deliverables.</li>
+                                    <li><b>Active Community Management</b>: Engage with followers, manage community interactions, and respond to comments and messages within 24 hours.
+        </li>
+                                    <li><b>Technical Support via Email</b>: Provide email-based technical support for basic issues, with a response time of 24 hours.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Service Tier 3 -->
+                            <div class="service-tier">
+                                <h4>Exclusive</h4>
+                                <ul>
+                                    <li><b>Up to 60 hours/month</li>
+                                    <li>$2,000/month</b></li>
+                                    <li><b>Client Communication Management</b>: Provide management of all client communications within the same business day.</li>
+                               
+                                    <li><b>Integrated Content Strategy</b>: Create a fully integrated content strategy, including blogs, social media, and email marketing, with monthly content calendars and custom graphics.</li>
+                                    <li><b>Custom Reporting and Dashboards</b>: Provide custom-built project dashboards and real-time reporting tailored to client needs.</li>
+                                <li><b>Tailored Solutions</b>: Based on client need.</li>
+                                </ul>
+                            </div>
+                        </section>
+        
+                        <section id="design-services" class="tab-content">
+                            <h3>Web Design Services</h3>
+                            <!-- Service Type 1 -->
+                            <div class="service-type">
+                                <h4>Landing Page Design</h4>
+                                <p><b>A single-page website customized for your business needs.</p>
+                                <ul>
+                                    <li>Current Standard Turnaround</b>: 1 week</li><li>Starts at $500</li>
+                                    <li><b>Current Expedited Turnaround</b>: 3 Days</li>
+                                    <li>Starts at $1,000</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Service Type 2 -->
+                            <div class="service-type">
+                                <h4>Basic Website Design</h4>
+                                <p><b>3 Page Website for your business needs.</p>
+                                <ul>
+                                    <li>Current Standard Turnaround</b>: 2 Weeks</li>
+                                    <li>Starts at $1,000</li>
+                                    <li><b>Current Expedited Turnaround</b>: 1 Week</li>
+                                    <li>Starts at $2,000</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Service Type 3 -->
+                            <div class="service-type">
+                                <h4>Website Redesign</h4>
+                                <p><b>Complete redesign of an existing website.</p>
+                                <ul>
+                                    <li>Current Standard Turnaround</b>: Depends on client need.</li>
+                                    <li>Starts at $2,500</li>
+                                    <li><b>Current Expedited Turnaround</b>: Depends on client need.</li>
+                                    <li>Starts at $3,000</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Add more sections as needed -->
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <script>
+            function showContent(id) {
+                const contents = document.querySelectorAll('.tab-content');
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+        
+                const activeContent = document.getElementById(id);
+                activeContent.classList.add('active');
+            }
+        </script>    
+        <script src="toggling2.js"></script>       
+</body>
+</html>
+<footer><p>Follow us on social media for more updates and tips!</p>
+    <a href="https://twitter.com/yourbusiness">Tiktok</a>
+    <a href="https://facebook.com/yourbusiness">Facebook</a>
+    <a href="https://twitter.com/yourbusiness">Youtube</a>
+    <a href="https://facebook.com/yourbusiness">Instagram</a></footer>
+</html>
